@@ -1,0 +1,418 @@
+/* Fonts */
+
+/* font-family: "LatoRegular"; */
+@font-face {
+    font-family: "LatoRegular";
+    src: url("fonts/LatoRegular/LatoRegular.eot");
+    src: url("fonts/LatoRegular/LatoRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoRegular/LatoRegular.woff") format("woff"),
+    url("fonts/LatoRegular/LatoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoBold"; */
+@font-face {
+    font-family: "LatoBold";
+    src: url("fonts/LatoBold/LatoBold.eot");
+    src: url("fonts/LatoBold/LatoBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoBold/LatoBold.woff") format("woff"),
+    url("fonts/LatoBold/LatoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoItalic"; */
+@font-face {
+    font-family: "LatoItalic";
+    src: url("fonts/LatoItalic/LatoItalic.eot");
+    src: url("fonts/LatoItalic/LatoItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoItalic/LatoItalic.woff") format("woff"),
+    url("fonts/LatoItalic/LatoItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoLight"; */
+@font-face {
+    font-family: "LatoLight";
+    src: url("fonts/LatoLight/LatoLight.eot");
+    src: url("fonts/LatoLight/LatoLight.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoLight/LatoLight.woff") format("woff"),
+    url("fonts/LatoLight/LatoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoBoldItalic"; */
+@font-face {
+    font-family: "LatoBoldItalic";
+    src: url("fonts/LatoBoldItalic/LatoBoldItalic.eot");
+    src: url("fonts/LatoBoldItalic/LatoBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoBoldItalic/LatoBoldItalic.woff") format("woff"),
+    url("fonts/LatoBoldItalic/LatoBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "LatoLightItalic"; */
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("fonts/LatoLightItalic/LatoLightItalic.eot");
+    src: url("fonts/LatoLightItalic/LatoLightItalic.eot?#iefix")format("embedded-opentype"),
+    url("fonts/LatoLightItalic/LatoLightItalic.woff") format("woff"),
+    url("fonts/LatoLightItalic/LatoLightItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+
+/* Base */
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Myriad_Pro_Regular; /* Имя шрифта */
+    src: url(fonts/MyriadPro-Regular.otf); /* Путь к файлу со шрифтом */
+}
+
+body {
+    color: #3c3c3c;
+    font-family: LatoLight;
+    
+}
+
+h1, h2 {
+            text-transform: uppercase;
+            font-family: LatoBold;
+}
+
+/* Layout */
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.header {
+	padding: 10% 20% 3% 20%;
+    min-height: 100vh;
+	height: auto;
+    width: 100%;
+	background: url("images/header/Layer.jpg");
+	-moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    
+    h1 {
+		font-size: 50px;
+		letter-spacing: 21px;
+    }
+
+    p {
+    	font-family: LatoRegular;
+    	font-size: 15px;
+    }
+
+    .logo-pic {
+        margin-bottom: 60px;
+    }
+    
+    .white-font {
+        color: white;
+
+        &:last-child {
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.about-us, .services, .what-we-do, .contact-us {
+    padding: 10% 20% 7% 20%;
+    
+    .content {
+        border: 2px solid #3c3c3c;
+        border-top: 0px;
+        padding: 10%;
+        text-align: center;
+        position: relative;
+
+        .top-left-border, .top-right-border {
+            position: absolute;
+            height: 2px;
+            background-color: #000;
+            width: 25%;
+            top: 0;
+            left: 0;
+        }
+
+        .top-right-border {
+            left: 75%;
+        }
+
+        .white-block {
+            position: absolute;
+            background: transparent;
+            width: 30vw;
+            height: 5vw;
+            border: 0;
+            z-index: 2;
+            top: -2.5vw;
+            bottom: 0;
+            left: 25%;
+            right: 0;
+        }
+
+    }
+}
+   
+.services {
+    color: #fff;
+    background: url("images/services-bg.jpg");
+    -moz-background-size: cover; /* Firefox 3.6+ */
+    -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: cover; /* Opera 9.6+ */
+    background-size: cover; /* Современные браузеры */
+
+    .content  {
+        border: 2px solid #fff;
+        border-top: 0px;
+
+        .top-left-border, .top-right-border {
+            background-color: white;
+        }
+    }
+}
+
+.what-we-do {
+    .type-of-work {
+        margin-top: 3rem;
+    }
+}
+
+.links {
+    font-size: 30px;
+    letter-spacing: 5px;
+    width: 100%;
+    font-size: 0px;
+
+    &:hover .single-link {
+        opacity: 0.6;
+    }
+
+    .single-link {
+        position: relative;
+        display: inline-block;
+        width: 25vw;
+        font-size: 1rem;
+        height: 25vh;
+        padding: 1%;
+        color: white;
+
+        &:hover {
+            opacity: 1;
+        }
+
+
+        h2 {
+            position: absolute;
+            bottom: 0;
+        }
+
+        /* средние блоки */
+        &:nth-child(2), &:nth-child(5) {
+            width: 48vw;
+            float: left;
+            margin: 0 0.46vw;
+        }
+
+        /* левые блоки */
+        &:nth-child(1), &:nth-child(4) {
+            float: left;
+        }
+
+        /* правые блоки*/
+        &:nth-child(3n) {
+            float: right;
+        }
+
+        /* нижние блоки */
+        &:nth-child(n+4) {
+            margin-top: 1vh;
+        }
+    }
+
+    .topworkz {
+        background: url("images/links/topworkz.jpg");
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+    }
+
+    .joint {
+        background: url("images/links/joint.jpg");
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+    }
+
+    .market {
+        background: url("images/links/market.jpg");
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+    }
+
+    .worktop {
+        background: url("images/links/worktop.jpg");
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+    }
+
+    .lable {
+        background: url("images/links/lable.jpg");
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+    }
+
+    .kyiv {
+        background: url("images/links/kyiv.jpg");
+        -moz-background-size: cover; /* Firefox 3.6+ */
+        -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
+        -o-background-size: cover; /* Opera 9.6+ */
+        background-size: cover; /* Современные браузеры */
+    }
+}
+
+.contact-us {
+
+    p {
+        margin-bottom: 5rem;
+    }
+
+    a {
+
+        &, 
+        &:active,
+        &:hover,
+        &:visited {
+            color: white;
+            background-color: #3c3c3c;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 1rem 5rem;
+        }
+    }
+}
+
+.footer {
+    .content {
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 14px;
+
+        img {
+            display: inline;
+            vertical-align: middle;
+            margin: 20px;
+        }
+
+        span {
+            vertical-align: middle;
+        }
+       
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .about-us .content .white-block,
+    .services .content .white-block, 
+    .what-we-do .content .white-block, 
+    .contact-us .content .white-block
+    {
+        width: 50vw;
+    }
+
+    .about-us, 
+    .services, 
+    .what-we-do, 
+    .contact-us {
+        padding: 10% 0 7% 0;
+
+        .white-block {
+
+            h1 {
+                font-size: 2rem;
+                margin: 0;
+            }
+        }
+    }
+
+    .links {
+        font-size: 0;
+        padding:0;
+
+        .single-link {
+            font-size: 1rem;
+
+            &:nth-child(n) {
+            float: left;
+            width: 49vw;
+            height: 25vh;
+            margin: 0;
+            }
+
+            &:nth-child(n+1) {
+            margin-right: 1vw;
+            margin-bottom: 1vh;
+            }
+        }
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+    .header h1 {
+        font-size: 0.9rem;
+    }
+
+    .links .single-link h2 {
+        font-size: 0.9rem;
+    }
+
+    .about-us .white-block h1, 
+    .services .white-block h1, 
+    .what-we-do .white-block h1, 
+    .contact-us .white-block h1 {
+        font-size: 1.3rem;
+    }
+
+    .contact-us a, 
+    .contact-us a:active, 
+    .contact-us a:hover, 
+    .contact-us a:visited
+    {
+        padding: 1rem 4rem;
+    }
+}
